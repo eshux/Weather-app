@@ -1,0 +1,29 @@
+.temp {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.wrapper {
+    margin: 50px 5px 80px 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.next {
+    margin: 5px;
+    padding: 20px;
+    min-width: 200px;
+    border: 2px solid aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+
+    & > h1 {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+}
