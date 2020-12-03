@@ -82,7 +82,7 @@ const App = () => {
   useEffect(() => {
     axios
       .get(
-        `http://api.openweathermap.org/data/2.5/find?q=${cityData}&units=metric&appid=0099190512b15b203f7f3a981660c38d`
+        `https://api.openweathermap.org/data/2.5/find?q=${cityData}&units=metric&appid=0099190512b15b203f7f3a981660c38d`
       )
       .then((response) => {
         setCurrentWeatherData(response.data.list[0]);
@@ -90,7 +90,7 @@ const App = () => {
 
     axios
       .get(
-        `http://api.openweathermap.org/data/2.5/forecast?q=${cityData}&lang=en&appid=0099190512b15b203f7f3a981660c38d&units=metric`
+        `https://api.openweathermap.org/data/2.5/forecast?q=${cityData}&lang=en&appid=0099190512b15b203f7f3a981660c38d&units=metric`
       )
       .then((response) => {
         // @ts-ignore
